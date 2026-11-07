@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FactQL chat example</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem auto; max-width: 760px; padding: 0 1rem; }
+    factql-chat { height: 620px; --factql-accent: #0a6650; }
+  </style>
+  <script src="https://api.factql.ai/embed/v1/factql-chat.js"></script>
+</head>
+<body>
+  <h1>Ask about your orders</h1>
+  <!-- Use an ask-only key with this site under Allowed websites. -->
+  <factql-chat
+    api-key="fl_live_YOUR_ASK_ONLY_KEY"
+    end-user-id="demo-user-1"
+    heading="Ask about your orders"
+    starters="Revenue by region this month | Top 10 customers | Which orders are late?"
+    show-sql
+  ></factql-chat>
+
+  <script>
+    const chat = document.querySelector("factql-chat");
+    chat.addEventListener("factql-answer", (e) => console.log("answer", e.detail.question, e.detail.rows.length));
+    chat.addEventListener("factql-error", (e) => console.warn("could not answer", e.detail.message));
+  </script>
+</body>
+</html>
