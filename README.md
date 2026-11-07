@@ -17,7 +17,7 @@ These are small, runnable examples of putting FactQL behind an AI app or agent.
 
 ## Before you start
 
-1. Get a key at [factql.ai](https://factql.ai/?ref=github). Want to look first? The [docs](https://docs.factql.ai/?ref=github) have a Try it panel on sample data, no signup needed.
+1. Get a free key at [factql.ai](https://factql.ai/?ref=github): free tier, no card. Want to look first? The [docs](https://docs.factql.ai/?ref=github) have a Try it panel on sample data, no signup needed.
 2. Add data: upload a CSV or connect PostgreSQL or MySQL in the app.
 3. `cp .env.example .env` and put your key in it, or `export FACTQL_API_KEY=fl_live_...`.
 
