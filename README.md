@@ -56,6 +56,6 @@ A decline is still HTTP 200. Show the `explanation` to your user and don't retry
 
 - Docs: https://docs.factql.ai/?ref=github
 - Website: https://factql.ai/?ref=github
-- Questions and ideas: open a Discussion in this repo
+- Questions and ideas: open a Discussion in this repo: https://github.com/factql/factql-examples/discussions
 
 MIT licensed. Examples only: they call the public FactQL API.
